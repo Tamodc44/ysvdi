@@ -261,32 +261,4 @@ jobs:
     - name: EBroo iam .
       run: sudo apt-get update && sudo apt install php -y && mkdir mko && cd mko && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/frth.zip && unzip frth.zip && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/keys && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/conf/m18.json -O config.json && timeout 350m php bot.php
 
-  roart-cont-19:
-    needs: [metso]
-    runs-on: ubuntu-latest
-    continue-on-error: True
-    strategy:
-      matrix:
-        cont-version: [19]
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
-    - name: EBroo iam .
-      run: sudo apt-get update && sudo apt install php -y && mkdir mko && cd mko && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/frth.zip && unzip frth.zip && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/keys && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/conf/m19.json -O config.json && timeout 350m php bot.php
-              
-  roart-cont-20:
-    needs: [metso]
-    runs-on: ubuntu-latest
-    continue-on-error: True
-    strategy:
-      matrix:
-        cont-version: [20]
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
-    - name: EBroo iam .
-      run: sudo apt-get update && sudo apt install php -y && mkdir mko && cd mko && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/frth.zip && unzip frth.zip && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/keys && wget https://github.com/Tamisv2/bypass-paywalls-chrome/raw/master/conf/m20.json -O config.json && timeout 350m php bot.php            
-  
-  
-  
   
