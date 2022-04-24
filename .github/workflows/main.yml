@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        testi: [1.1, 27, 278, 2v, 9e, 93h, os, yys,]
+        testi: [1.1, 27, 278, 2v, 9e, 93h, os, yys, ish, mma]
         flaga: [Aqw, his, ]
     steps:
     - name: Setup
